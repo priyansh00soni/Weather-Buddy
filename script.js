@@ -7,6 +7,8 @@ let error=document.querySelector(".error");
 let card=document.querySelector(".card");
 let btn=document.querySelector(".btn");
 let input=document.querySelector(".input");
+const key = "YOUR_OPENWEATHER_API_KEY"; 
+const imageKey = "YOUR_UNSPLASH_API_KEY";
 input.addEventListener("keydown",(event)=>{
     if(event.key=="Enter") work();
 })
