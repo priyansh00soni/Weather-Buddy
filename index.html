@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="mb-10 overflow-x-hidden"
+      style="background-image: url('https://images.unsplash.com/photo-1503197979108-c824168d51a8?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size:conver;
+      background-repeat: no-repeat;
+      
+      
+      ">
+
+<div class="relative flex justify-center h-20 mt-10 font-bold text-5xl md:text-6xl">
+    <span class="absolute flex justify-center w-full text-black opacity-80 " style="top: 2px; left: 2px;">
+      Weather Buddy
+    </span>
+    <span class="bg-gradient-to-b z-10 from-fuchsia-600 to-purple-500 bg-clip-text text-transparent">
+      Weather Buddy
+    </span>
+  </div>
+  
+
+    <div class="flex flex-col justify-center items-center">
+     <div class=" mt-5  h-10 w-full  flex justify-center form mb-10 gap-2">
+        <input type="text" placeholder=" Enter Place" class="bg-white input border-2 rounded-sm w-56 pl-3 font-bold">
+        
+            <button class="btn border-2 px-1.5 font-semibold rounded-sm text-white border-black bg-gradient-to-b from-purple-500 to-fuchsia-500 hover:cursor-pointer active:scale-95 transition-all duration-100 ease-in-out" style="box-shadow:2px 2px 2px rgb(0, 0, 0,0.6) ">&nbsp;Get Weather&nbsp;</button> 
+          
+     </div>  
+     <div class=" text-fuchsia-100 hidden gap-10 pt-5 image card rounded-2xl min-w-[22rem] min-h-[30rem] px-4 flex flex-col items-center text-3xl "  style="box-shadow:4px 4px 3px rgb(0, 0, 0,0.7) ;"
+     style="background-image: url('https://unsplash.com/photos/_WuPjE-MPHo/download?ixid=M3w3NTk4MDJ8MHwxfHNlYXJjaHwxfHxpbmRpYXxlbnwwfHx8fDE3NDkwMzcxMjV8MA'); ">
+        <h1 class="text-6xl font-bold place" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"></h1>
+        <p class="temp text-5xl font-semibold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"></p>
+        <p class="text-3xl font-semibold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);">Humidity: <span class="humidity"></span></p>
+        <p class="day font-semibold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"></p>
+        <p class="weatherEmoji text-8xl" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);"></p>
+     </div> 
+     <p class="text-fuchsia-100 font-bold rounded-lg error  px-1 w-[22.2rem] md:w-[23rem] hidden flex flex-col items-center text-[1.6rem] bg-gradient-to-b from-violet-500 via-fuchsia-400 to-purple-500 gap-10 PL-2"  style="box-shadow:2px 2px 3px rgb(0, 0, 0,0.7) ;">❌Please Enter a Valid Place</p>
+     
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
